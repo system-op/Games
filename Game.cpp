@@ -4,7 +4,7 @@
 #include <vector>
 
 std::vector<std::string> Default_list = {
-        "монолит", "Саня","линукс","1000",
+        "монолит", "Саня","линукс","игра",
         "школа","егэ","программирование",
         "сестра","бумага","мачета", "киша"
     };
@@ -13,7 +13,7 @@ std::vector<std::string> list;
 std::string word; //слово
 bool Delete_words; //удалять ли слова
 int X_Symbol; // количество скрываемых букв кроме одной
-int Num_Game = 1; // номер игры 
+int Num_Game = 0; // номер игры 
 
 int word_success =0; // кол-во отгаданных слов с первой попытки
 int word_nosuccess =0; // номер игры 
@@ -67,8 +67,8 @@ std::string charge_element_words(std::string words) {
        words.replace(array[i], 2, "Х");
     }
     
-    std::cout << "[words]: " << word << '\n';
-    std::cout << "[Edit_words]: " << words << '\n';
+    //std::cout << "[words]: " << word << '\n';
+    //std::cout << "[Edit_words]: " << words << '\n';
     return words;
 }
 
